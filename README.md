@@ -27,6 +27,15 @@ This promotes security best practices by avoiding hardcoding sensitive informati
 - Consider using API management services that provide additional security features, such as rate limiting, access controls, and analytics.
 
 # Testing
+## Automated Testing
+### Compile
+- Make sure your project is compiled and packaged `mvn clean install`. This command compiles the code, runs tests, and creates the packaged JAR.
+
+### Run Tests
+- From the IDE by right-clicking on the test class or method and selecting the "Run" option.
+- From the command line execute `mvn test`.
+
+## Manual Testing
 ### Post a movie search request via CURL from command line
 Valid examples
 - `curl -i -X POST -H 'Content-Type: application/json' -d '{"genre":"thriller","actor":"Brad Pitt","year":"2009"}' http://localhost:8080/movies`
